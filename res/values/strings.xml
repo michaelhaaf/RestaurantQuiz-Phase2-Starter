@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Restaurant Quiz</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_category_chooser">Restaurant Quiz</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_map_fragment">Map</string>
+    <string name="button_start_map">Play!</string>
+    <string name="databaseServiceString">addRemoveDatabase</string>
+    <string name="BarTitle">CPSC 210</string>
+    <string name="Flaticon_recognition">Icons by Flaticon.com</string>
+    <string name="keyword_menu_title">Reviews</string>
+    <string name="category_menu_title">Categories</string>
+    <string name="geographical_menu_title">Areas</string>
+    <string name="ok">OK</string>
+    <string name="about">About</string>
+    <string name="recent_scores">Recent Scores</string>
+    <!-- This array is empty because we will be dynamically filling it each time -->
+    <string-array name="category_array" />
+</resources>

@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:context="ca.ubc.cs.cpsc210.quiz.activity.RestaurantQuiz"
+        tools:ignore="MergeRootFrame"
+        android:id="@+id/frameLayout"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:id="@+id/game_spinner"
+            android:spinnerMode="dialog"
+            android:theme="@style/AppTheme"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical|right" />
+
+        <AutoCompleteTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:completionThreshold="3"
+            android:singleLine="true"
+            android:id="@+id/find_location_dropdown"
+            android:clickable="true"
+            android:minWidth="120dip"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:text="@string/button_start_map"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/play_game_button"
+            android:theme="@style/AppTheme"
+            android:visibility="visible"
+            android:enabled="false"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:text="Which way do you want to play the game?"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/get_started_dialog"
+            android:typeface="monospace"
+            android:singleLine="false"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_size"
+            android:layout_marginLeft="5dp"
+            android:clickable="false"
+            android:enabled="false"
+            android:focusable="false"
+            android:visibility="gone"
+            android:textAlignment="textEnd"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:layout_gravity="center_vertical"
+            android:minHeight="20dip"
+            android:id="@+id/restaurant_name_display"
+            android:typeface="monospace"
+            android:singleLine="false"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_size"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:enabled="false"
+            android:focusable="false"
+            android:textAlignment="textEnd"
+            android:layout_marginTop="5dp" />
+
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_weight=".95"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dip"
+        android:background="#000000"
+        android:id="@+id/baseDialog"
+        android:visibility="visible"
+        android:orientation="horizontal"
+        android:layout_weight=".05"
+        android:gravity="center_vertical"
+        android:accessibilityLiveRegion="assertive">
+
+        <ImageView
+            android:id="@+id/yelp_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yelp_logo_50x25"
+            android:layout_marginLeft="10dip"
+            android:textColor="#fff" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="#fff" />
+        <TextView
+            android:id="@+id/points_text_view"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:textAlignment="gravity"
+            android:textColor="#fff"
+            android:enabled="true" />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="#fff" />
+
+        <TextView
+            android:id="@+id/total_points_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:textAlignment="gravity"
+            android:layout_marginLeft="5dip"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            android:singleLine="false" />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="#fff" />
+        <TextView
+            android:id="@+id/distance_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:textAlignment="gravity"
+            android:layout_marginRight="5dip"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            android:singleLine="false" />
+    </LinearLayout>
+
+
+</LinearLayout>

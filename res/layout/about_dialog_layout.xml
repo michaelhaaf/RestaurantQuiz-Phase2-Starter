@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:autoLink="web" android:textSize="@dimen/text_size" android:layout_margin="5dip"
+        android:text="Base code written by: Jonathan Stiansen."/>
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:autoLink="web" android:textSize="@dimen/text_size" android:layout_margin="5dip"
+              android:text="Features added by: CPSC 210.\n\nCredits:"/>
+    <TextView android:layout_marginLeft="25dip" android:layout_height="wrap_content" android:layout_width="fill_parent" android:autoLink="web" android:textSize="@dimen/text_size"
+              android:text="Application icon made by Freepik from www.flaticon.com is licensed by CC BY 3.0\nhttp://creativecommons.org/licenses/by/3.0/\n"/>
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_chooser_menu">
+    <!--xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ca.ubc.cs.cpsc210.quiz.activity.CategoryChooser" >-->
+
+    <item android:id="@+id/category_choice"
+        android:title="@string/category_menu_title"
+        android:icon="@drawable/ic_action_expand"
+        android:orderInCategory="200"
+        android:showAsAction="always" />
+    <item android:id="@+id/geographical_choice"
+          android:title="@string/geographical_menu_title"
+          android:icon="@android:drawable/ic_menu_compass"
+          android:orderInCategory="300"
+          android:showAsAction="always" />
+    <item android:id="@+id/recent_scores"
+          android:title="Recent Scores"
+          android:icon="@android:drawable/btn_star"
+          android:orderInCategory="400"
+          android:showAsAction="always"/>
+    <item android:id="@+id/about"
+          android:title="About"
+          android:icon="@android:drawable/ic_menu_info_details"
+          android:orderInCategory="500"
+          android:showAsAction="ifRoom|withText"/>
+
+</menu>
